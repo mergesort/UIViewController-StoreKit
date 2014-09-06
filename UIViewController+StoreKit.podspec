@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/mergesort/UIViewController-StoreKit'
   spec.author       =  { 'Joe Fabisevich' => 'github@fabisevi.ch' }
   spec.summary      = 'A category on UIViewController allowing you to pull up an iTunes item with just one method.'
-  spec.source       =  { :git => 'https://github.com/mergesort/UIViewController-StoreKit', :tag => "#{spec.version}" }
+  spec.source       =  { :git => 'https://github.com/mergesort/UIViewController-StoreKit.git', :tag => "#{spec.version}" }
   spec.source_files = '*.{h,m}'
   spec.framework    = 'Foundation'
   spec.requires_arc = true
