@@ -11,4 +11,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.social_media_url = 'https://twitter.com/mergesort'
   spec.ios.deployment_target = '7.0'
+
+  spec.dependency 'NSString+Validation'
 end
