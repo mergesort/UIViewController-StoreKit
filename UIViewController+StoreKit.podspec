@@ -1,6 +1,7 @@
 Pod::Spec.new do |spec|
+#Information
   spec.name         = 'UIViewController+StoreKit'
-  spec.version      = '1.0'
+  spec.version      = '1.0.1'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage     = 'https://github.com/mergesort/UIViewController-StoreKit'
   spec.author       =  { 'Joe Fabisevich' => 'github@fabisevi.ch' }
@@ -12,5 +13,6 @@ Pod::Spec.new do |spec|
   spec.social_media_url = 'https://twitter.com/mergesort'
   spec.ios.deployment_target = '7.0'
 
+#Depdencies
   spec.dependency 'NSString+Validation'
 end
