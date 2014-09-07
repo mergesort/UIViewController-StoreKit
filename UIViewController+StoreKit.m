@@ -43,10 +43,12 @@ NSString * const iTunesAppleString = @"itunes.apple.com";
     SKStoreProductViewController *storeViewController = [[SKStoreProductViewController alloc] init];
     storeViewController.delegate = self;
     
+    NSString *campaignToken = self.campaignToken ?: @"";
+
     NSDictionary *parameters = @{
                                     SKStoreProductParameterITunesItemIdentifier: @(itemIdentifier),
                                     affiliateTokenKey : affiliateTokenKey,
-                                    campaignTokenKey : self.campaignToken,
+                                    campaignTokenKey : campaignToken,
                                 };
     
     if (self.loadingStoreKitItemBlock)
