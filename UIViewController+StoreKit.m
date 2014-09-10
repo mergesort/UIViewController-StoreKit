@@ -81,6 +81,18 @@ NSString * const iTunesAppleString = @"itunes.apple.com";
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Public methods
 
+- (void)openAppReviewURLForIdentifier:(NSInteger)identifier
+{
+    NSString *reviewURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%li", (long)identifier];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURLString]];
+}
+
+- (void)openAppURLForIdentifier:(NSInteger)identifier
+{
+    NSString *reviewURLString = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/id%li", (long)identifier];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURLString]];
+}
+
 + (BOOL)containsITunesURLString:(NSString *)URLString
 {
     return [URLString containsString:iTunesAppleString];

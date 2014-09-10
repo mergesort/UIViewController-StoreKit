@@ -26,6 +26,9 @@
 
 - (void)presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier;
 
+- (void)openAppURLForIdentifier:(NSInteger)identifier;
+- (void)openAppReviewURLForIdentifier:(NSInteger)identifier;
+
 + (BOOL)containsITunesURLString:(NSString *)URLString;
 + (NSInteger)IDFromITunesURL:(NSString *)URLString;
 
