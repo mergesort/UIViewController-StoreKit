@@ -26,6 +26,8 @@
 
 - (void)presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier;
 
++ (NSURL *)appURLForIdentifier:(NSInteger)identifier;
+
 - (void)openAppURLForIdentifier:(NSInteger)identifier;
 - (void)openAppReviewURLForIdentifier:(NSInteger)identifier;
 
