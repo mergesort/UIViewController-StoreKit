@@ -22,7 +22,7 @@
 @property (nonatomic, copy) void (^loadingStoreKitItemBlock)(void);
 @property (nonatomic, copy) void (^loadedStoreKitItemBlock)(void);
 
-- (void)presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier;
+- (void)presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier completion:(void (^)(void))completion;
 
 + (NSURL*)appURLForIdentifier:(NSInteger)identifier;
 

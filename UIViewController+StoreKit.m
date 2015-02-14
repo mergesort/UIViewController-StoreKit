@@ -32,7 +32,7 @@ NSString* const iTunesAppleString = @"itunes.apple.com";
 
 @implementation UIViewController (StoreKit)
 
-- (void)presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier
+- (void)presentStoreKitItemWithIdentifier:(NSInteger)itemIdentifier completion:(void (^)(void))completion
 {
     SKStoreProductViewController* storeViewController = [[SKStoreProductViewController alloc] init];
     storeViewController.delegate = self;
@@ -56,7 +56,7 @@ NSString* const iTunesAppleString = @"itunes.apple.com";
 
         if (result && !error)
         {
-            [self presentViewController:storeViewController animated:YES completion:nil];
+            [self presentViewController:storeViewController animated:YES completion:completion];
         }
     }];
 }
